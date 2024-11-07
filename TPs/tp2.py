@@ -25,6 +25,9 @@ def menu():
                 tupla1 = (1, 3, 5)
                 tupla2 = (5, 1, 3)
                 exercicio2(tupla1, tupla2)
+                tupla3 = (1, 3, 5)
+                tupla4 = (5, 1, 3, 5)
+                exercicio2(tupla3, tupla4)
             elif exercicio == 3:
                 lista = [4, 1, 5, 2, 3, 2, 4, 4]
                 frequencia = exercicio3(lista)
@@ -167,17 +170,37 @@ def exercicio1(idades):
 
     return maiores_idade
 
-def exercicio2(tupla1, tupla2):
+def exercicio2(tuplaA, tuplaB):
     '''
     Função que verifica se duas possuem os mesmos elementos, independentemente da ordem
 
-    Input: tupla1 e tupla2 (tuple) - tuplas a serem comparadas
+    Input: tupla1 e tupla2 - tuplas a serem comparadas
     Output: mensagem informando se as tuplas possuem os mesmos elementos
     '''
-    if set(tupla1) == set(tupla2):
+
+    #A solução mais simples seria usar set(tuplaA) == set(tuplaB) uma tupla (1, 3, 5, 5) tem os mesmos elementos que (5, 1, 3), mas acredito que o enunciado permita tanto essa quanto a solução abaixo
+
+    #Eu interpretei que o exercício solicita que as tuplas tenham exatamente o mesmo len() e os mesmos elementos, somente em outra ordem, então fiz a solução abaixo
+
+    elementos1 = {}
+    elementos2 = {}
+
+    for elemento in tuplaA:
+        if elemento in elementos1:
+            elementos1[elemento] += 1
+        else:
+            elementos1[elemento] = 1
+    for elemento in tuplaB:
+        if elemento in elementos2:
+            elementos2[elemento] += 1
+        else:
+            elementos2[elemento] = 1   
+    if elementos1 == elementos2:
         print("As tuplas possuem os mesmos elementos.")
     else:
         print("As tuplas não possuem os mesmos elementos.")
+
+
 
 def exercicio3(lista):
     '''
