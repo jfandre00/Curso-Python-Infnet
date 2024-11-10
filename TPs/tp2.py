@@ -3,6 +3,12 @@
 from random import randint, choice
 
 def menu():
+    '''
+    Função que exibe um menu com os exercícios do TP2 e solicita ao usuário que escolha um exercício para executar
+
+    Input: nenhum
+    Output: execução do exercício escolhido pelo usuário
+    '''
     while True:
         entrada = input("Digite o exercício (1 a 16) ou 0 para sair: ")
         
