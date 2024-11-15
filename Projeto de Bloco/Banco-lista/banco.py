@@ -7,20 +7,34 @@
 '''
 
 from crud import *
-
+from menu import *
 
 contas = [
 # [id (posição 0), nome (posição 1), saldo (posição 2)]
-    [1, 'André', 100], 
-    [2, 'Bruno', 200], 
-    [3, 'Eloisa', 300], 
-    [4, 'Murilo', 400]
-    ]
+[1, 'André', 100], 
+[2, 'Bruno', 200], 
+[3, 'Eloisa', 300], 
+[4, 'Murilo', 400]
+]
 
-consultar_contas(contas)
-#incluir_conta(contas)
-#excluir_conta(contas)
-alterar_conta(contas)
-consultar_contas(contas)
+opcao = entrar_opcao()
+while (opcao != 0):
+    match opcao:
+        case 1:
+            incluir_conta(contas)
+        case 2:
+            alterar_conta(contas)
+        case 3:
+            excluir_conta(contas)
+        case 4:
+            consultar_contas(contas)
+        case 5:
+            consultar_conta(contas)
+        case _: #default
+            print("Opção inválida!")
 
-#preparar menu 6 opcoes: 4 consultar contas, 1 incluir, 3 excluir, 2 alterar, 5 consultar conta, 0 sair - DE FORMA REFATORADA
+    opcao = entrar_opcao()
+
+
+
+
