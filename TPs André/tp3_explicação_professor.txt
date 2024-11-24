@@ -1,6 +1,0 @@
-TP3 leitura em aula dia 12-11-2024
-
-1 a 4 -> utilizar list comprehension
-
-demais exercícios : usar funções
-
