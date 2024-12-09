@@ -1,0 +1,1 @@
+if not validar_estoque_ou_preco(preco_venda=float(preco_venda), preco_custo=float(preco_custo)):
