@@ -56,12 +56,30 @@ def cadastrar_produto(estoque): #Requisito 1
 
 def ordenar_produtos_por_quantidade(): #Requisito 4
     '''
-    Função que ordena os produtos por quantidade
+    Função que ordena os produtos por quantidade. O usuário pode escolher exibir em ordem crescente ou decrescente
 
     return: None
     '''
-    estoque.sort(key=lambda x: x['qtd'], reverse=True)
-    print("Produtos ordenados por quantidade com sucesso!\nEscolha a opção 2 para visualizar") #Coloquei quebras de linha para melhorar a visualização pois achei que estava muito junto
+    if estoque_esta_vazio(estoque):
+        print("Não há produtos para ordenar")
+        return
+    while True:
+        pergunta = input("Deseja ordenar em ordem crescente [1] ou decrescente [2]? ")
+        if pergunta == "1":
+            estoque.sort(key=lambda x: x['qtd'])
+            print("Produtos ordenados por quantidade com sucesso!")
+            listar_produtos(estoque)
+            break
+        elif pergunta == "2":
+            estoque.sort(key=lambda x: x['qtd'], reverse=True)
+            print("Produtos ordenados por quantidade com sucesso!")
+            listar_produtos(estoque)
+            break
+        else:
+            print("Opção inválida! Tente novamente")
+            continue
+            
+            
 
 def buscar_produto(escolha, busca): #Requisito 6
     '''
