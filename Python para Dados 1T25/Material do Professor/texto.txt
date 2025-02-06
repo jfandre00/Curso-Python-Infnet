@@ -1,0 +1,17 @@
+Nome: João da Silva
+Idade: 32 anos
+Cidade: São Paulo
+Profissão: Engenheiro de Software
+
+Nome: Maria Oliveira
+Idade: 28 anos
+Cidade: Rio de Janeiro
+Profissão: Designer Gráfico
+
+Nome: Pedro Santos
+Idade: 40 anos
+Cidade: Belo Horizonte
+Profissão: Analista de Dados
+
+Este é um arquivo de exemplo contendo informações de diferentes pessoas.
+Cada bloco contém nome, idade, cidade e profissão.

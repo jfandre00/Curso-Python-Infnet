@@ -1,0 +1,7 @@
+30-01-2025
+
+Peguei o código mais recente até o momento - feito com lista_arquivo_classe (professor)
+A partir dai removemos todas as opções de gravar arquivos pois vamos usar SQL
+
+-------
+Criar o banco via script
