@@ -35,3 +35,41 @@ def consultar_conta_db(id):
         desconectar(conn)
 
     return conta
+
+
+def incluir_conta_db(nome, saldo):
+    comando = "INSERT INTO contas (nome, saldo) VALUES (?, ?);"
+    try:
+        conn = conectar()
+        cursar = conn.cursor()
+        cursar.execute(comando, (nome, saldo)) #é uma tupla que é passada como parametro
+        conn.commit()
+    except Exception as ex:
+        print(ex)
+    finally:
+        desconectar(conn)
+
+def excluir_conta_db(id):
+    comando = "DELETE FROM contas WHERE id = ?;"
+    try:
+        conn = conectar()
+        cursar = conn.cursor()
+        cursar.execute(comando, (id,)) #é uma tupla que é passada como parametro
+        conn.commit()
+    except Exception as ex:
+        print(ex)
+    finally:
+        desconectar(conn)
+
+def alterar_conta_db(conta):
+    comando = "UPDATE contas SET saldo = ? WHERE id = ?;"
+    try:
+        conn = conectar()
+        cursar = conn.cursor()
+        cursar.execute(comando, (conta.saldo, conta.id)) #é uma tupla que é passada como parametro
+        #estamos passando dentro da tupla os elementos que estão dentro do objeto conta, que passamos por parametro
+        conn.commit()
+    except Exception as ex:
+        print(ex)
+    finally:
+        desconectar(conn)

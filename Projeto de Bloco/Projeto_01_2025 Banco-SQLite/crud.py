@@ -17,27 +17,22 @@ def consultar_conta():
         return
     print(conta)
 
-def incluir_conta(contas):
-    id = entrar_id()
-    conta_pesquisada = pesquisar_conta(contas, id)
-    if (conta_pesquisada):
-        print("Erro: conta já existe")
-        return
+def incluir_conta():
     nome = entrar_nome()
     saldo = entrar_saldo()
-    contas.append(Conta(id, nome, saldo))
+    incluir_conta_db(nome, saldo)
 
-def excluir_conta(contas):
+def excluir_conta():
     id = entrar_id()
-    conta_pesquisada = pesquisar_conta(contas, id)
-    if (not conta_pesquisada):
+    conta = consultar_conta_db(id)
+    if (not conta):
         print("Erro: conta não existe")
         return
-    contas.remove(conta_pesquisada)
+    excluir_conta_db(id)
 
-def alterar_conta(contas):
+def alterar_conta():
     id = entrar_id()
-    conta= pesquisar_conta(contas, id)
+    conta = consultar_conta_db(id)
     if (not conta):
         print("Erro: conta não existe")
         return
@@ -47,3 +42,4 @@ def alterar_conta(contas):
         conta.creditar(valor)
     else:
         conta.debitar(valor)
+    alterar_conta_db(conta) #está passando o objeto conta que foi criado com os dados consultados do banco via sql
