@@ -1,0 +1,3 @@
+Este é um exemplo de texto.
+Este texto contém algumas palavras repetidas, palavras importantes, é o texto.
+É importante que o texto seja um exemplo de palavras repetidas.

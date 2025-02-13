@@ -1,0 +1,37 @@
+[
+    {
+        "nome": "João Silva",
+        "idade": 28,
+        "sexo": "Masculino",
+        "salario": 3500.00,
+        "ativo": true
+    },
+    {
+        "nome": "Maria Oliveira",
+        "idade": 34,
+        "sexo": "Feminino",
+        "salario": 4200.00,
+        "ativo": false
+    },
+    {
+        "nome": "Carlos Pereira",
+        "idade": 45,
+        "sexo": "Masculino",
+        "salario": 5000.00,
+        "ativo": true
+    },
+    {
+        "nome": "Ana Costa",
+        "idade": 29,
+        "sexo": "Feminino",
+        "salario": 3800.00,
+        "ativo": true
+    },
+    {
+        "nome": "Pedro Santos",
+        "idade": 40,
+        "sexo": "Masculino",
+        "salario": 4500.00,
+        "ativo": false
+    }
+]
