@@ -1,39 +1,41 @@
+PRAGMA foreign_keys = ON;
+
 --Modelo lógico das tabelas para SQLite
 
 -- Tabela Contato
 CREATE TABLE Contato (
     ID_Contato INTEGER PRIMARY KEY,
     Nome TEXT NOT NULL,
-    Data_Nascimento DATE
+    Data_Nascimento DATE NOT NULL
 );
 
 -- Tabela Endereco
 CREATE TABLE Endereco (
     ID_Endereco INTEGER PRIMARY KEY,
     Rua TEXT NOT NULL,
-    Numero INTEGER,
+    Numero INTEGER NOT NULL,
     Complemento TEXT,
     Bairro TEXT,
-    Municipio TEXT,
-    Estado TEXT,
-    CEP TEXT,
-    ID_Contato INTEGER,
+    Municipio TEXT NOT NULL,
+    Estado TEXT NOT NULL,
+    CEP TEXT NOT NULL,
+    ID_Contato INTEGER NOT NULL,
     FOREIGN KEY (ID_Contato) REFERENCES Contato (ID_Contato)
 );
 
 -- Tabela Telefone
 CREATE TABLE Telefone (
     ID_Telefone INTEGER PRIMARY KEY,
-    Numero_Telefone TEXT NOT NULL,
-    ID_Contato INTEGER,
+    Numero_Telefone TEXT NOT NULL UNIQUE,
+    ID_Contato INTEGER NOT NULL,
     FOREIGN KEY (ID_Contato) REFERENCES Contato (ID_Contato)
 );
 
 -- Tabela Email
 CREATE TABLE Email (
     ID_Email INTEGER PRIMARY KEY,
-    Endereco_Email TEXT NOT NULL,
-    ID_Contato INTEGER,
+    Endereco_Email TEXT NOT NULL UNIQUE,
+    ID_Contato INTEGER NOT NULL,
     FOREIGN KEY (ID_Contato) REFERENCES Contato (ID_Contato)
 );
 
