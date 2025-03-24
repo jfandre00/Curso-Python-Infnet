@@ -1,0 +1,152 @@
+[
+    {
+        "id":1,
+        "title":"The Shawshank Redemption",
+        "year":1994,
+        "rating":9.3
+    },
+    {
+        "id":2,
+        "title":"The Godfather",
+        "year":1972,
+        "rating":9.2
+    },
+    {
+        "id":3,
+        "title":"The Dark Knight",
+        "year":2008,
+        "rating":9.0
+    },
+    {
+        "id":4,
+        "title":"The Godfather Part II",
+        "year":1974,
+        "rating":9.0
+    },
+    {
+        "id":5,
+        "title":"12 Angry Men",
+        "year":1957,
+        "rating":9.0
+    },
+    {
+        "id":6,
+        "title":"The Lord of the Rings: The Return of the King",
+        "year":2003,
+        "rating":9.0
+    },
+    {
+        "id":7,
+        "title":"Schindler's List",
+        "year":1993,
+        "rating":9.0
+    },
+    {
+        "id":8,
+        "title":"Pulp Fiction",
+        "year":1994,
+        "rating":8.9
+    },
+    {
+        "id":9,
+        "title":"The Lord of the Rings: The Fellowship of the Ring",
+        "year":2001,
+        "rating":8.9
+    },
+    {
+        "id":12,
+        "title":"The Lord of the Rings: The Two Towers",
+        "year":2002,
+        "rating":8.8
+    },
+    {
+        "id":14,
+        "title":"Inception",
+        "year":2010,
+        "rating":8.8
+    },
+    {
+        "id":13,
+        "title":"Fight Club",
+        "year":1999,
+        "rating":8.8
+    },
+    {
+        "id":11,
+        "title":"Forrest Gump",
+        "year":1994,
+        "rating":8.8
+    },
+    {
+        "id":10,
+        "title":"The Good, the Bad and the Ugly",
+        "year":1966,
+        "rating":8.8
+    },
+    {
+        "id":15,
+        "title":"Star Wars: Episode V - The Empire Strikes Back",
+        "year":1980,
+        "rating":8.7
+    },
+    {
+        "id":16,
+        "title":"The Matrix",
+        "year":1999,
+        "rating":8.7
+    },
+    {
+        "id":17,
+        "title":"GoodFellas",
+        "year":1990,
+        "rating":8.7
+    },
+    {
+        "id":18,
+        "title":"One Flew Over the Cuckoo's Nest",
+        "year":1975,
+        "rating":8.7
+    },
+    {
+        "id":19,
+        "title":"Interstellar",
+        "year":2014,
+        "rating":8.7
+    },
+    {
+        "id":20,
+        "title":"Seven",
+        "year":1995,
+        "rating":8.6
+    },
+    {
+        "id":21,
+        "title":"It's a Wonderful Life",
+        "year":1946,
+        "rating":8.6
+    },
+    {
+        "id":22,
+        "title":"Seven Samurai",
+        "year":1954,
+        "rating":8.6
+    },
+    {
+        "id":23,
+        "title":"The Silence of the Lambs",
+        "year":1991,
+        "rating":8.6
+    },
+    {
+        "id":24,
+        "title":"Saving Private Ryan",
+        "year":1998,
+        "rating":8.6
+    },
+    {
+        "id":25,
+        "title":"City of God",
+        "year":2002,
+        "rating":8.6
+    }
+]
