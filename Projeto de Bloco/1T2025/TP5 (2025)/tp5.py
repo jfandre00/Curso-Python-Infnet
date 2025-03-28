@@ -1,3 +1,5 @@
+# TP5 Projeto de Bloco - 2025 - André L M Ferreira
+
 import urllib.request
 from bs4 import BeautifulSoup
 import pandas as pd
@@ -198,6 +200,23 @@ SELECT
 FROM livros
 GROUP BY grupo_paginas
 ''', conn).to_string(index=False))
+
+# 7. Quais são os livros escritos por autores brasileiros?
+print("Livros escritos por autores brasileiros:\n", pd.read_sql_query('''
+SELECT l.titulo, a.nome, a.pais
+FROM livros l
+JOIN livro_autor la ON l.isbn = la.isbn
+JOIN autores a ON la.id_autor = a.id_autor
+WHERE a.pais = 'Brasil'
+''', conn))
+
+# 8. Consulta todos os livros e seus autores
+print("Livros e seus autores:\n", pd.read_sql_query('''
+SELECT l.titulo, a.nome, a.pais
+FROM livros l
+JOIN livro_autor la ON l.isbn = la.isbn
+JOIN autores a ON la.id_autor = a.id_autor
+''', conn))
 
 
 conn.close()
