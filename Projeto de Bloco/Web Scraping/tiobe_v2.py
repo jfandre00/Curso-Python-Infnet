@@ -1,3 +1,5 @@
+import pandas as pd
+
 def criar_df(tabela):
     cabecalho = []
     for row in tabela.find_all('th'):
@@ -15,3 +17,4 @@ def criar_df(tabela):
         #print(mes_ano_atual, mes_ano_anterior, mudanca, linguagem, ratings, change)
         df.loc[len(df)] = [mes_ano_atual, mes_ano_anterior, mudanca, linguagem, ratings, change]
     return df
+
