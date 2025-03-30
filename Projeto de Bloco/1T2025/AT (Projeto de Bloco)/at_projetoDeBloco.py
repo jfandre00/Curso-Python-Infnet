@@ -5,6 +5,10 @@ import sqlite3
 import os
 from datetime import datetime
 
+'''
+a parte final do trabalho será uma aplicação para gerar empréstimos. Crie um programa em python que permite o gerenciamento de empréstimos, devoluções e usuários via menu do console. Cada usuário registrado pode ter emprestado até 5 livros ao mesmo tempo. Os livros devem ter a disponibilidade sempre atualizada, e só podem ser emprestados a um usuário por vez. Um empréstimo é considerado encerrado quando a data de entrega for adicionada na tabela do banco de dados. As ações realizadas no menu devem ser salvas em um arquivo .xlsx para fins de log do sistema, que será consultado ao fim da aplicação
+'''
+
 # URL do site para web scraping
 url = "https://pedrovncs.github.io/livrariapython/livros.html"
 response = urllib.request.urlopen(url)

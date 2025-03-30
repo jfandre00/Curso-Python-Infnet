@@ -9,14 +9,15 @@ import os
 # URL do site do TP5
 url = "https://pedrovncs.github.io/livrariapython/livros.html"
 
-# Obtenção do HTML da página
+# Obter o código HTML da página
 response = urllib.request.urlopen(url)
 html = response.read()
 
 # Analisar o HTML
 soup = BeautifulSoup(html, 'html.parser')
 
-# Encontra todos os livros
+# Encontra todos os livros, determinando o elemento <li> com a classe 'list-group-item' após fazer a inspeção do HTML.
+
 livros = soup.find_all('li', class_='list-group-item')
 
 '''
@@ -43,7 +44,7 @@ dados_livro_autor = []
 for livro in livros:
     titulo = livro.find('h5').text.strip() # Encontra o título do livro e remove os espaços em branco.
     
-    info = livro.find_all('p') # Encontra todas as informações do livro e abaixo vamos separar cada informação em variáveis.
+    info = livro.find_all('p') # Encontra todas as informações do livro e abaixo vamos separar cada informação em variáveis diferentes, já fazendo a conversão de tipo.
     isbn = info[0].text.replace('ISBN:', '').strip()
     genero = info[1].text.replace('Gênero:', '').strip()
     autores = info[2].text.replace('Autor(es):', '').strip()
