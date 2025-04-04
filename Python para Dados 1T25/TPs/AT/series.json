@@ -3,14 +3,175 @@
         "id":1,
         "title":"Breaking Bad",
         "year":2008,
-        "seasons":5,
+        "seasons":6,
         "episodes":62
     },
     {
         "id":2,
-        "title":"Lost",
-        "year":2004,
+        "title":"Planet Earth II",
+        "year":2016,
+        "seasons":1,
+        "episodes":6
+    },
+    {
+        "id":3,
+        "title":"Planet Earth",
+        "year":2006,
+        "seasons":1,
+        "episodes":11
+    },
+    {
+        "id":4,
+        "title":"Band of Brothers",
+        "year":2001,
+        "seasons":1,
+        "episodes":10
+    },
+    {
+        "id":5,
+        "title":"Chernobyl",
+        "year":2019,
+        "seasons":1,
+        "episodes":5
+    },
+    {
+        "id":6,
+        "title":"The Wire",
+        "year":2002,
+        "seasons":7,
+        "episodes":60
+    },
+    {
+        "id":7,
+        "title":"Avatar: The Last Airbender",
+        "year":2005,
+        "seasons":4,
+        "episodes":62
+    },
+    {
+        "id":8,
+        "title":"Blue Planet II",
+        "year":2017,
+        "seasons":1,
+        "episodes":7
+    },
+    {
+        "id":9,
+        "title":"The Sopranos",
+        "year":1999,
+        "seasons":9,
+        "episodes":86
+    },
+    {
+        "id":10,
+        "title":"Cosmos: A Spacetime Odyssey",
+        "year":2014,
+        "seasons":1,
+        "episodes":13
+    },
+    {
+        "id":11,
+        "title":"Cosmos",
+        "year":1980,
+        "seasons":1,
+        "episodes":13
+    },
+    {
+        "id":12,
+        "title":"Our Planet",
+        "year":2019,
+        "seasons":5,
+        "episodes":12
+    },
+    {
+        "id":13,
+        "title":"Game of Thrones",
+        "year":2011,
+        "seasons":9,
+        "episodes":74
+    },
+    {
+        "id":14,
+        "title":"Bluey",
+        "year":2018,
+        "seasons":8,
+        "episodes":195
+    },
+    {
+        "id":15,
+        "title":"The World at War",
+        "year":1973,
+        "seasons":2,
+        "episodes":26
+    },
+    {
+        "id":16,
+        "title":"Fullmetal Alchemist: Brotherhood",
+        "year":2009,
+        "seasons":2,
+        "episodes":68
+    },
+    {
+        "id":17,
+        "title":"Life",
+        "year":2009,
+        "seasons":1,
+        "episodes":11
+    },
+    {
+        "id":18,
+        "title":"Rick and Morty",
+        "year":2013,
+        "seasons":13,
+        "episodes":85
+    },
+    {
+        "id":19,
+        "title":"The Last Dance",
+        "year":2020,
+        "seasons":1,
+        "episodes":10
+    },
+    {
+        "id":20,
+        "title":"The Twilight Zone",
+        "year":1959,
         "seasons":6,
-        "episodes":121
+        "episodes":156
+    },
+    {
+        "id":21,
+        "title":"Attack on Titan",
+        "year":2013,
+        "seasons":11,
+        "episodes":98
+    },
+    {
+        "id":22,
+        "title":"The Vietnam War",
+        "year":2017,
+        "seasons":1,
+        "episodes":10
+    },
+    {
+        "id":23,
+        "title":"Sherlock",
+        "year":2010,
+        "seasons":8,
+        "episodes":15
+    },
+    {
+        "id":24,
+        "title":"Batman: The Animated Series",
+        "year":1992,
+        "seasons":4,
+        "episodes":85
+    },
+    {
+        "id":25,
+        "title":"Arcane",
+        "year":2021,
+        "seasons":4,
+        "episodes":18
     }
 ]

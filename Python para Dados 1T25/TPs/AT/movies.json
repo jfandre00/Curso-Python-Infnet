@@ -54,21 +54,9 @@
         "rating":8.9
     },
     {
-        "id":12,
-        "title":"The Lord of the Rings: The Two Towers",
-        "year":2002,
-        "rating":8.8
-    },
-    {
-        "id":14,
-        "title":"Inception",
-        "year":2010,
-        "rating":8.8
-    },
-    {
-        "id":13,
-        "title":"Fight Club",
-        "year":1999,
+        "id":10,
+        "title":"The Good, the Bad and the Ugly",
+        "year":1966,
         "rating":8.8
     },
     {
@@ -78,9 +66,21 @@
         "rating":8.8
     },
     {
-        "id":10,
-        "title":"The Good, the Bad and the Ugly",
-        "year":1966,
+        "id":12,
+        "title":"The Lord of the Rings: The Two Towers",
+        "year":2002,
+        "rating":8.8
+    },
+    {
+        "id":13,
+        "title":"Fight Club",
+        "year":1999,
+        "rating":8.8
+    },
+    {
+        "id":14,
+        "title":"Inception",
+        "year":2010,
         "rating":8.8
     },
     {
@@ -97,7 +97,7 @@
     },
     {
         "id":17,
-        "title":"GoodFellas",
+        "title":"Goodfellas",
         "year":1990,
         "rating":8.7
     },
@@ -115,7 +115,7 @@
     },
     {
         "id":20,
-        "title":"Seven",
+        "title":"Se7en",
         "year":1995,
         "rating":8.6
     },
@@ -127,14 +127,14 @@
     },
     {
         "id":22,
-        "title":"Seven Samurai",
-        "year":1954,
+        "title":"The Silence of the Lambs",
+        "year":1991,
         "rating":8.6
     },
     {
         "id":23,
-        "title":"The Silence of the Lambs",
-        "year":1991,
+        "title":"Seven Samurai",
+        "year":1954,
         "rating":8.6
     },
     {

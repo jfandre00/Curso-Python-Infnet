@@ -27,7 +27,8 @@ soup = BeautifulSoup(html, 'html.parser')
 filmes = soup.select('li.ipc-metadata-list-summary-item')
 
 #1.b Exibindo os 10 primeiros títulos dos filmes (utilizei o find_all para pegar os títulos)
-titulos_ex1b = soup.find_all('div', class_='ipc-title ipc-title--base ipc-title--title ipc-title-link-no-icon ipc-title--on-textPrimary sc-3713cfda-2 fSzZES cli-title with-margin')
+titulos_ex1b = soup.find_all('div', class_='ipc-title ipc-title--base ipc-title--title ipc-title-link-no-icon ipc-title--on-textPrimary sc-495ef71a-2 cpvJUg cli-title with-margin')
+
 
 #1.b Extraia os títulos dos filmes e exiba os 10 primeiros.
 print("\n Títulos dos 10 primeiros filmes do IMDb Top 250: \n")
