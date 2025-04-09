@@ -7,8 +7,9 @@ def validar_usuario(id_usuario):
     conn = conectar()
     cursor = conn.cursor()
     cursor.execute("SELECT 1 FROM usuarios WHERE id_usuario = ?", (id_usuario,))
+    result = cursor.fetchone() is not None
     desconectar(conn)
-    return cursor.fetchone() is not None
+    return result
     
 
 def verificar_limite_emprestimos(id_usuario):
@@ -36,12 +37,14 @@ def validar_livro_disponivel(id_livro):
         SELECT quantidade_disponivel 
         FROM livros 
         WHERE id_livro = ? AND quantidade_disponivel > 0
-        ''', (id_livro))
+        ''', (id_livro,))
+        result = cursor.fetchone() is not None
     except sqlite3.Error as e:
         print(f"Erro ao validar livro: {e}")
+        result = False
     finally:
         desconectar(conn)
-    return cursor.fetchone() is not None
+    return result
 
 
 # Devoluções
@@ -76,8 +79,18 @@ def gerenciar_devolucoes():
         return
     
     # Registrar devolução
-    id_emprestimo = input("\nDigite o ID do empréstimo para devolução: ")
-    data_devolucao = datetime.now().strftime('%Y-%m-%d')
+    while True:
+        id_emprestimo = input("\nDigite o ID do empréstimo para devolução (ou 0 para sair): ")
+        if id_emprestimo == "0":
+            print("Operação de devolução cancelada.")
+            return
+        cursor = conn.cursor()
+        cursor.execute("SELECT 1 FROM emprestimos WHERE id_emprestimo = ? AND data_devolucao IS NULL", (id_emprestimo,))
+        if cursor.fetchone():
+            break
+        else:
+            print("ID do empréstimo inválido ou já devolvido. Tente novamente.")
+    data_devolucao = datetime.datetime.now().strftime('%Y-%m-%d')
     
     try:
         conn = conectar()
@@ -105,4 +118,8 @@ def gerenciar_devolucoes():
         print("Devolução registrada com sucesso!")
     except sqlite3.Error as e:
         print(f"Erro ao registrar devolução: {e}")
-        conn.rollback()
+        conn.rollback() # desfaz as alterações em caso de erro
+    finally:
+        desconectar(conn)
+
+    
