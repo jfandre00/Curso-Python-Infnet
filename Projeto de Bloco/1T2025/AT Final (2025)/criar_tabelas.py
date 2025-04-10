@@ -1,6 +1,9 @@
 from conectar_db import *
 
-# Criar tabelas se não existirem (incluindo a tabela de empréstimos)
+# Criar tabelas usuários e empréstimos se não existirem (as outras vieram do TP5)
+# O trabalho de modelagem e criação do banco de dados foi feito durante o TP4.
+
+
 def criar_tabelas_db():
     conn = conectar()
     cursor = conn.cursor()

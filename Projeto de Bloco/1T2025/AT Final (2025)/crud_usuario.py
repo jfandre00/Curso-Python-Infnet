@@ -115,7 +115,7 @@ def editar_usuario():
         print("Usuário não encontrado!")
         return
     
-    #Se o usuário não digitar nada, o valor padrão será o que já está no banco de dados
+    #Se o usuário não digitar nada, o valor padrão será o que já está armazendado no banco de dados
     nome = input(f"Nome ({usuario[1]}): ") or usuario[1]
     sobrenome = input(f"Sobrenome ({usuario[2]}): ") or usuario[2]
     data_nasc = input(f"Data de nascimento ({usuario[3]}): ") or usuario[3]
